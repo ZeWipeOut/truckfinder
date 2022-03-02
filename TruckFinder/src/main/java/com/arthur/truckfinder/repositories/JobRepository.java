@@ -10,4 +10,5 @@ import com.arthur.truckfinder.models.Job;
 @Repository
 public interface JobRepository extends CrudRepository<Job, Long> {
 	List<Job> findAllByUserId(Long id);
+	List<Job> findAll();
 }
