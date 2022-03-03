@@ -1,3 +1,4 @@
+
 package com.arthur.truckfinder.models;
 
 import java.util.Date;

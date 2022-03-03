@@ -13,13 +13,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import com.arthur.truckfinder.models.LoginUser;
 import com.arthur.truckfinder.models.User;
-import com.arthur.truckfinder.services.UserService;
+import com.arthur.truckfinder.services.UserServiceO;
 
 @Controller
 public class HomeController {
 	 
 	@Autowired
-	private UserService userService;
+	private UserServiceO userService;
 	
     @GetMapping("/")
     public String index(Model model) {

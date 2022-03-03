@@ -7,38 +7,33 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import com.arthur.truckfinder.services.DriverService;
+import com.arthur.truckfinder.services.UserService;
 
 @Controller
 public class DriverController {
 	
 	@Autowired
-	private DriverService driverService;
+	private UserService userService;
 	
-	@GetMapping("/dashboardd")
-	public String dasboardd(Model model, HttpSession session) {
+	@GetMapping("/driver/dashboard")
+	public String driverDash(Model model, HttpSession session) {
 		if(session.getAttribute("userId")==null) {
 			return "redirect:/";
 		}
+		
+		model.addAttribute("user", userService.getOne(long)session.getAttribute("userId")));
+	}
+	
+	@GetMapping("/driver/search")
+	public String driverSearch(Model model, HttpSession session) {
 		return null;
 		
 	}
 	
-	@GetMapping("/inboxd")
-	public String inboxd () {
-		return null;
-		
-	} 
-	
-	@GetMapping("/lookatjob")
-	public String lookatjob () {
-		return null;
+	@GetMapping("/driver/job/show")
+	public String showjob(Model model, HttpSession session) {
+		return "showonejob.jsp";
 		
 	}
 	
-	@GetMapping("/searchjobs")
-	public String searchjobs() {
-		return null;
-		
-	}
 }

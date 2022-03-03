@@ -12,7 +12,7 @@ import com.arthur.truckfinder.models.User;
 import com.arthur.truckfinder.repositories.UserRepository;
 
 @Service
-public class UserService {
+public class UserServiceO {
 
 	@Autowired
 	private UserRepository userRepo;
@@ -58,11 +58,6 @@ public class UserService {
     		return user;
     	}
     }
-
-	public Object getOne(long attribute) {
-		// TODO Auto-generated method stub
-		return null;
-	}
     
     
 }
