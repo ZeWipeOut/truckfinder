@@ -6,7 +6,6 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body>
 
 <style>
     img{
@@ -112,6 +111,5 @@ legend {
             </div>
         </div>
     </div>
-</body>
 </body>
 </html>

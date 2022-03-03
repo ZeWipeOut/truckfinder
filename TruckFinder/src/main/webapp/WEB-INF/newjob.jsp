@@ -88,7 +88,7 @@
                 <input type="number">
                 
                 <label>Weight:</label>
-                <input type="double">
+                <input type="text">
                 
                 <label>Trailer type required:</label>
                 <input type="text">

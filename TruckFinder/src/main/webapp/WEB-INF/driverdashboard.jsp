@@ -95,20 +95,24 @@
                 <legend><h4>Near you</h4></legend>
                 <table>
                     <thead>
-                        <tr>  Job ID  </tr>
-                        <tr>  Comapny  </tr>
-                        <tr>  Street  </tr>
-                        <tr>  City  </tr>
-                        <tr>  State  </tr>
-                        <tr>  Zipcode </tr>
+                    	<tr>
+                        	<td>  Job ID  </td>
+                        	<td>  Comapny  </td>
+                        	<td>  Street  </td>
+                        	<td>  City  </td>
+                        	<td>  State  </td>
+                        	<td>  Zipcode </td>
+                        </tr>
                     </thead>
                     <tbody>
-                        <td><a href="${locations.job_id}">${locations.job_id}</a></td>
-                        <td>${location.company}</td>
-                        <td>${location.street}</td>
-                        <td>${location.city}</td>
-                        <td>${location.state}</td>
-                        <td>${location.zipcode}</td>
+                    	<tr>
+                        	<td><a href="${locations.job_id}">${locations.job_id}</a></td>
+                        	<td>${location.company}</td>
+                        	<td>${location.street}</td>
+                        	<td>${location.city}</td>
+                        	<td>${location.state}</td>
+                        	<td>${location.zipcode}</td>
+                        </tr>
                     </tbody>
                 </table>
             </fieldset>
