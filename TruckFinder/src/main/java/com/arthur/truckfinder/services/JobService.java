@@ -18,6 +18,10 @@ public class JobService {
 		return jobRepo.findAll();
 	}
 	
+	public List<Job> allJobsByUser(Long id) {
+		return jobRepo.findAllByUserId(id);
+	}
+	
 	// Function to fetch only the jobs that aren't taken, will work on later
 	/* public List<Job> openJobs() {
 		
